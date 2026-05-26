@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: jobboard
+  labels:
+    app: jobboard
+    managed-by: kubectl

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: jobboard-config
+  namespace: jobboard
+data:
+  NODE_ENV:                "production"
+  PORT:                    "5001"
+  JWT_ACCESS_EXPIRES_IN:   "15m"
+  JWT_REFRESH_EXPIRES_IN:  "7d"
+  # This will be updated to the real ALB URL in Step F
+  CLIENT_URL:              "http://localhost"
