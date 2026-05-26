@@ -159,6 +159,9 @@ export default function ApplicationTimeline({
               {!event.date && !event.completed && !event.active && (
                 <p className="text-xs text-gray-300 mt-1">Pending</p>
               )}
+              {isRejected && (
+                <p className="text-xs text-red-600 mt-1">Rejected</p>
+              )}
             </div>
           </li>
         );
