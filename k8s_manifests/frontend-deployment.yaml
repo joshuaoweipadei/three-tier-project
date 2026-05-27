@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 459499397949.dkr.ecr.ca-central-1.amazonaws.com/jobboard-frontend:latest
+          image: 459499397949.dkr.ecr.us-east-1.amazonaws.com/jobboard-frontend:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80

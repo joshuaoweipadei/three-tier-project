@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 459499397949.dkr.ecr.ca-central-1.amazonaws.com/jobboard-backend:latest
+          image: 459499397949.dkr.ecr.us-east-1.amazonaws.com/jobboard-backend:latest
           # Always pull latest image — important for deployments
           imagePullPolicy: Always
           ports:
