@@ -32,11 +32,11 @@ output "vpc_id" {
 }
 
 output "kubectl_config_command" {
-  description = "Run this after apply to connect kubectl to your cluster"
-  value       = "aws eks update-kubeconfig --region ca-central-1 --name jobboard-cluster"
+  description = "Run this to connect kubectl to your cluster"
+  value       = "aws eks update-kubeconfig --region us-east-1 --name jobboard-cluster"
 }
 
 output "ecr_login_command" {
-  description = "Run this to authenticate Docker with ECR before pushing images"
-  value       = "aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin ${data.aws_caller_identity.current.account_id}.dkr.ecr.ca-central-1.amazonaws.com"
+  description = "Run this to authenticate Docker with ECR"
+  value       = "aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin ${data.aws_caller_identity.current.account_id}.dkr.ecr.us-east-1.amazonaws.com"
 }
