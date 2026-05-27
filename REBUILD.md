@@ -9,7 +9,3 @@
 7. kubectl apply ingress.yaml
 8. kubectl get ingress -n jobboard -w → get URL
 EOF
-
-
-git commit -m "add rebuild cheatsheet"
-git push
