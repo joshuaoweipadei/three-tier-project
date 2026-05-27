@@ -7,5 +7,4 @@
 5. Install ArgoCD
 6. Install ALB controller via Helm
 7. kubectl apply ingress.yaml
-8. kubectl get ingress -n jobboard -w → get URL
-EOF
+8. kubectl get ingress -n jobboard -w → get URL EOF
